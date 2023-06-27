@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { Typography } from '@mui/material';
+import MainLayout from '@/components/layouts/MainLayout';
 
 export default function HomePage() {
   return (
@@ -11,12 +12,14 @@ export default function HomePage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Typography
-          variant="h1"
-          color='primary'
-        >
-          Next app
-        </Typography>
+        <MainLayout title='Open Jira'>
+          <Typography
+            variant="h1"
+            color='primary'
+          >
+            Next app
+          </Typography>
+        </MainLayout>
       </main>
     </>
   )
