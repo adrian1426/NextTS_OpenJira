@@ -2,6 +2,7 @@ import React from 'react';
 import { Box } from '@mui/material';
 import Head from 'next/head';
 import Navbar from '../ui/Navbar';
+import Sidebar from '../ui/Sidebar';
 
 interface Props {
   title?: string;
@@ -17,7 +18,7 @@ const MainLayout = (props: Props) => {
         <title>{title}</title>
       </Head>
       <Navbar />
-      {/* SideBar */}
+      <Sidebar />
 
       <Box sx={{ padding: '10px 20px' }}>
         {children}
