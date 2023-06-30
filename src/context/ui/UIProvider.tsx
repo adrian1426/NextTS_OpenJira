@@ -13,7 +13,7 @@ export const UIProvider = (props: IProps) => {
   const [state, dispatch] = useReducer(UIReducer, initialUIState);
 
   return (
-    <UIContext.Provider value={{ sideMenuOpen: false }}>
+    <UIContext.Provider value={{ state, dispatch }}>
       {children}
     </UIContext.Provider>
   );

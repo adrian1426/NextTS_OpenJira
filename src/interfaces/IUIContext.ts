@@ -1,3 +1,6 @@
+import { IInitialUIState } from "./IInitialUIState";
+
 export interface IUIContext {
-  sideMenuOpen: boolean;
+  state: IInitialUIState,
+  dispatch: Function
 }
