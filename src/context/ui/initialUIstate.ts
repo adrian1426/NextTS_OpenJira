@@ -1,5 +1,5 @@
-import { IUIContext } from "@/interfaces";
+import { IInitialUIState } from "@/interfaces";
 
-export const initialUIState: IUIContext = {
+export const initialUIState: IInitialUIState = {
   sideMenuOpen: false
 };
